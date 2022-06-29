@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    
+    
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title> Badminton </title>
+    <link rel="stylesheet" href= "style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,100&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>    
+    <body>
+        
+        <section class="contact-header">
+            <nav>
+                <!---  <a href=index.html><img src="img/logo.png"></a>--->
+                <div class="nav-links" id="navLinks">
+                   <!--- <i class="fa fa-times-circle" onclick="hideMenu()"   aria-hidden="true"></i>--->
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="team.html">OUR TEAM</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>                     
+                    </ul>
+                    
+                </div>
+               <!--- <i class="fa fa-bars" onclick="showMenu()"  aria-hidden="true"></i> --->
+            </nav>
+            <div class="subtext-box">
+                <h1>Contact</h1>   
+                <p> 
+                </p>
+            </div>        
+        </section>
+        
+
+        <section class="contact-map">           
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.536369019608!2d14.497088597928272!3d50.020044579409756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b91881f955555%3A0x7eec7a815900df62!2sVR%C5%A0A%20Sportcentrum!5e0!3m2!1scs!2scz!4v1655140713700!5m2!1scs!2scz" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>  
+        </section>
+          
+
+
+
+        <section class="contact-info">           
+            <div class="contact-container">
+                <div class="contact">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Adress</h5>
+                            <p>VRŠA Sportcentrum<br>
+                                Technologická 956/2a, 149 00 Praha-Kunratice</p>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>Phone</h5>
+                            <p>+420 778 084 449</p>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                            <h5>E-Mail</h5>
+                            <p>info.badmintonclub.cz</p>
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="contact-form">
+                <form action="form-handler.php" method="post">
+                    <input type="text"  name = "name" placeholder="Enter Your Name" required>
+                    <input type="text"  name = "email" placeholder="Enter Email" required>
+                    <input type="text"  name = "subject" placeholder="Enter Subject" required>
+                    <textarea  rows="8"  name = "message" placeholder="Message"></textarea>
+                    <button type="submit" class="contact-hero-btn contact-btn">Send</button>
+                </form>
+        
+            </div>  
+     </section>  
+
+     <!--- 
+     <section class="contact-form"> 
+        <div class="form">
+           <form action="">
+               <input type="text" placeholder="Enter Your Name" required>
+               <input type="text" placeholder="Enter Email" required>
+               <input type="text" placeholder="Enter Subject" required>
+               <textarea  rows="8" placeholder="Message"></textarea>
+               <button type="submit" class="hero-btn red-btn">Send</button>
+           </form>
+   
+       </div>  
+       </section> 
+    -->
+
+     
+    
+    
+    
+
+
+
+
+
+
+
+
+         <!----footer---->    
+        
+        <section class="footer"> 
+            <h4>About us</h4>
+             
+             <div class="icons">
+                <a target="_blank" href="https://www.facebook.com/mastersdoha" title="Facebook"><i class="fa fa-facebook" ></i></a>
+                <a target="_blank" href="http://www.kfc.cz" title="Twitter"><i class="fa fa-twitter" ></i></a>
+                <a target="_blank" href="https://www.instagram.com/vupavel_/" title="Instagram"><i class="fa fa-instagram" ></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/duc-long-vu-1a9202194" title="LinkedIn"><i class="fa fa-linkedin" ></i></a>
+            </div>
+            
+        </section>
+             
+             
+                        
+        <!----javascript toggle menu---->
+        <script> 
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+            navLinks.style.right = "0";
+            }
+            function hideMenu(){
+            navLinks.style.right = "-200px";
+            }
+        </script>
+        
+    </body>
+
+</html>
